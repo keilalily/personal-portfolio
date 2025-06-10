@@ -1,0 +1,10 @@
+export default function Chip({ label }) {
+    return (
+        <div
+            className='flex justify-center items-center bg-secondary/25 text-xs text-accent w-fit rounded-full px-3 py-1.5
+            lg:text-sm lg:px-4 lg:py-2'
+        >
+            {label}
+        </div>
+    )
+}
