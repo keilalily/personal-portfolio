@@ -92,7 +92,7 @@ export const projects = [
         title: 'Country Quiz Master',
         description: 'A responsive quiz app built with React JS and Tailwind CSS. It fetches real-time data from the Rest Countries API to generate questions about flags, capitals, and continents. Designed for the devChallenges.io platform, the app features score tracking, answer feedback, and error handling.',
         year: 2025,
-        tags: ['React', 'Tailwind CSS', ''],
+        tags: ['React', 'Tailwind CSS'],
         link: 'https://country-quiz-master-phi.vercel.app/'
     },
     {
