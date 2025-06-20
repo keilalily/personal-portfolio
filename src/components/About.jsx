@@ -4,7 +4,7 @@ export default function About() {
     return (
         <section 
             id="about"
-            className='flex flex-col gap-8 items-start p-8 md:p-16 md:pt-0 lg:pt-16 font-poppins'
+            className='section'
         >
             <h2 className='heading-2'>
                 About

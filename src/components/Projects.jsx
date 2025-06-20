@@ -6,7 +6,7 @@ export default function Projects() {
     return (
         <section
             id="projects"
-            className='flex flex-col gap-8 items-start p-8 md:p-16 font-poppins'
+            className='section'
         >
             <h2 className='heading-2'>
                 Projects
@@ -17,7 +17,7 @@ export default function Projects() {
                         key={index}
                         className='flex flex-col lg:flex-row lg:gap-8 rounded-lg border-2 border-transparent lg:p-6 lg:hover:border-secondary/10 lg:hover:shadow-lg transition-all duration-300'
                     >
-                        <span className='hidden lg:flex text-secondary text-xl'>
+                        <span className='hidden text-accent lg:flex text-xl'>
                                 {project.year}
                         </span>
                         <div className='flex flex-col gap-2 lg:gap-3 w-full'>
@@ -32,7 +32,7 @@ export default function Projects() {
                                         <BsArrowRightShort className='inline-block ml-1 -rotate-45' />
                                     </a>
                                 </h3>
-                                <span className='flex lg:hidden text-secondary text-sm md:text-lg'>
+                                <span className='flex text-accent lg:hidden text-sm md:text-lg'>
                                     {project.year}
                                 </span>
                             </div>
