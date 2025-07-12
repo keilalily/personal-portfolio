@@ -46,13 +46,13 @@ export default function Hero() {
     return (
         <header className='flex flex-col gap-4 items-start lg:h-screen lg:justify-between p-8 md:p-16 lg:border-r lg:border-secondary/10'>
             <div className='flex flex-col gap-2 md:gap-3'>
-                <h1 className='flex flex-col gap-2 font-inter text-3xl md:text-4xl font-bold text-primary'>
+                <h1 className='flex flex-col gap-2 font-poppins text-3xl md:text-4xl font-bold text-heading'>
                     {aboutMe.name}
-                    <span className='font-poppins font-semibold text-xl md:text-xl'>
+                    <span className='font-inter font-semibold text-xl md:text-2xl'>
                         {aboutMe.title}
                     </span>
                 </h1>
-                <p className='font-poppins text-secondary text-sm md:text-lg'>
+                <p className='font-inter text-secondary text-sm md:text-lg'>
                     {aboutMe.description}
                 </p>
             </div>
@@ -62,9 +62,9 @@ export default function Hero() {
                     <a
                         key={key}
                         href={href}
-                        className={`font-poppins text-primary uppercase tracking-50 text-xl w-fit relative
-                            after:absolute after:w-0 after:h-0.5 after:bg-primary after:bottom-0 after:left-0
-                            hover:after:content[""] hover:after:w-full hover:after:bg-primary
+                        className={`font-poppins text-heading uppercase tracking-50 text-xl w-fit relative
+                            after:absolute after:w-0 after:h-0.5 after:bg-heading after:bottom-0 after:left-0
+                            hover:after:content[""] hover:after:w-full hover:after:bg-heading
                             after:transition-all after:duration-300
                             ${active === href ? 'after:w-full' : 'after:w-0'}`}
                     >
@@ -74,7 +74,7 @@ export default function Hero() {
             </nav>
 
             <button
-                className='px-6 py-1.5 border-1 rounded-full text-primary font-poppins text-sm md:text-lg uppercase
+                className='px-6 py-1.5 border-1 rounded-full text-heading font-poppins text-sm md:text-lg uppercase
                     hover:bg-primary hover:text-background hover:cursor-pointer transition-all duration-300'
                 onClick={downloadCV}
             >
@@ -90,7 +90,7 @@ export default function Hero() {
                         rel="noopener noreferrer"
                         className=''
                     >
-                        <Icon className='w-6 h-6 md:w-8 md:h-8 text-primary/75 hover:text-primary' />
+                        <Icon className='w-6 h-6 md:w-8 md:h-8 text-heading/75 hover:text-heading' />
                         <span className='sr-only'>{key}</span>
                     </a>
                 ))}

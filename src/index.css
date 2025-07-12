@@ -7,7 +7,8 @@
   --breakpoint-xl: 1440px;
   --font-inter: "Inter", sans-serif;
   --font-poppins: "Poppins", sans-serif;
-  --color-primary: #E7EFC7;
+  --color-heading: #E7EFC7;
+  --color-primary: #D3D3D3;
   --color-secondary: #AEC8A4;
   --color-background: #1D5464;
   --color-accent: #FFB915;
@@ -16,11 +17,15 @@
 }
 
 .section {
-  @apply flex flex-col gap-6 items-start font-poppins scroll-mt-12;
+  @apply flex flex-col gap-4 items-start font-inter scroll-mt-12;
 }
 
 .heading-2 {
-  @apply text-xl md:text-2xl font-bold text-primary tracking-25 uppercase;
+  @apply text-2xl lg:text-3xl font-poppins font-bold text-heading tracking-25 uppercase;
+}
+
+.bullet {
+  @apply w-1 h-1 md:w-2 md:h-2 rounded-full ml-2 shrink-0 bg-primary;
 }
 
 .bg-textured {

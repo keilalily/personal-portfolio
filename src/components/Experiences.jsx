@@ -9,28 +9,41 @@ export default function Experiences() {
             <h2 className="heading-2">
                 Experiences
             </h2>
-            <div className="flex flex-col w-full gap-6 md:gap-8">
+            <div className="flex w-full gap-6">
                 {experiences.map((experience, index) => (
-                    <div
-                        key={index}
-                        className="flex flex-col gap-1"
-                    >
-                        <h3 className="text-xl md:text-2xl font-semibold text-primary">
-                            {experience.title}
-                        </h3>
-                        <p className="text-primary/90 text-base md:text-lg">
-                            {experience.company}
-                        </p>
-                        <p className="text-accent text-sm md:text-lg">
-                            {experience.year}
-                        </p>
-                        <p className="text-secondary text-xs md:text-base">
-                            {experience.description}
-                        </p>
-                            <span className="text-sm text-gray-500">{experience.date}</span>
+                    <>
+                        <div className="flex items-start rounded w-20">
+                            <img
+                                src={experience.logo}
+                                alt={`${experience.company} logo`}
+                                className="w-full object-contain rounded"
+                            />
                         </div>
-                    ))}
-                </div>
+                        <div
+                            key={index}
+                            className="relative flex flex-col"
+                        >
+                            <h3 className="text-xl md:text-2xl font-semibold text-primary">
+                                {experience.title}
+                            </h3>
+                            <p className="text-primary/90 text-base md:text-lg">
+                                {experience.company}
+                            </p>
+                            <p className="text-accent text-sm md:text-base">
+                                {experience.year}
+                            </p>
+                            <ul className="flex flex-col text-secondary text-sm md:text-base">
+                                {experience.description.map((desc, index) => (
+                                    <li key={index} className="flex items-baseline gap-4">
+                                        <span class="bullet"></span>
+                                        {desc}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </>
+                ))}
+            </div>
         </section>
     )
 }

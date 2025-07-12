@@ -39,7 +39,7 @@ export const socialLinks = {
     }
 }
 
-export const techStack = [
+export const skillSet = [
     {
         name: 'React',
         icon: assets.reactLogo
@@ -70,41 +70,49 @@ export const experiences = [
     {
         title: 'Web Developer Intern',
         company: 'Arcvis Digital Design Services',
-        year: 'January 2025 - May 2025',
+        year: 'Jan 2025 - May 2025',
         description: [
             'Built a full-stack website using MongoDB, Express.js, React.js, and Node.js to promote company services.',
             'Developed a custom admin dashboard for managing projects (create, update, delete).',
             'Delivered a responsive, user-friendly design and optimized backend performance.'
-        ]
+        ],
+        logo: assets.arcvisLogo
     }
 ]
 
 export const projects = [
     {
+        title: 'Tic-Tac-Toe Game',
+        description: 'A simple, modern Tic-Tac-Toe game built with Next.js 14 App Router, Tailwind CSS, and shadcn/ui. It lets players choose X or O, track their score, and reset the board.',
+        year: 'Jul 2025',
+        tags: ['Next.js', 'Tailwind CSS'],
+        link: 'https://tic-tac-toe-game-ecru-kappa.vercel.app/'
+    },
+    {
         title: 'Country Quiz Master',
         description: 'A responsive quiz app built with React and Tailwind CSS. It uses the Rest Countries API to generate flag, capital, and continent questions with score tracking and answer feedback.',
-        year: 2025,
+        year: 'Jun 2025',
         tags: ['React', 'Tailwind CSS'],
         link: 'https://country-quiz-master-phi.vercel.app/'
     },
     {
         title: 'Arcvis Digital Design Services Website',
         description: 'A full-stack web application built to present company services and projects. Includes a custom appointment booking system to schedule meetings directly with the owner.',
-        year: 2025,
+        year: 'Jan 2025 - May 2025',
         tags: ['React', 'Node.js', 'MongoDB'],
         link: 'https://arcvisdesigns.onrender.com/'
     },
     {
         title: 'Space Tourism Website',
         description: 'A responsive multi-page website developed based on a Frontend Mentor design challenge.',
-        year: 2025,
+        year: 'Apr 2025',
         tags: ['React', 'Tailwind CSS'],
         link: 'https://keilalily.github.io/fm-space-tourism-website/'
     },
     {
         title: 'IMPRINTA',
         description: 'A full-stack web app for managing printing services. It features secure auth and a user-friendly interface, rated 94% in usability tests.',
-        year: 2024,
+        year: 'May 2024 - Dec 2024',
         tags: ['Flutter', 'Node.js', 'Firebase'],
         link: 'https://youtu.be/SCuGbweG-p4?si=vQuE7eh7H7SOVtU7'
     },

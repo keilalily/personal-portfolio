@@ -15,28 +15,26 @@ export default function Projects() {
                 {projects.map((project, index) => (
                     <div
                         key={index}
-                        className='flex flex-col lg:flex-row lg:gap-8 rounded-lg border-2 border-transparent lg:p-6 lg:hover:border-secondary/10 lg:hover:shadow-lg transition-all duration-300'
+                        className='flex flex-col w-full lg:flex-row lg:gap-6 rounded-lg border-2 border-transparent lg:p-6 lg:hover:border-secondary/10 lg:hover:shadow-lg transition-all duration-300'
                     >
-                        <span className='hidden text-accent lg:flex text-xl'>
+                        <span className='hidden text-accent lg:flex text-base w-1/6'>
                                 {project.year}
                         </span>
-                        <div className='flex flex-col gap-2 lg:gap-3 w-full'>
-                            <div className='flex justify-between'>
-                                <h3 className='text-xl md:text-2xl font-semibold text-primary hover:text-primary/80'>
-                                    <a
-                                        href={project.link}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        {project.title}
-                                        <BsArrowRightShort className='inline-block ml-1 -rotate-45' />
-                                    </a>
-                                </h3>
-                                <span className='flex text-accent lg:hidden text-sm md:text-lg'>
-                                    {project.year}
-                                </span>
-                            </div>
-                            <p className='text-secondary text-sm md:text-lg'>
+                        <div className='flex flex-col gap-1 lg:gap-3 w-full'>
+                            <h3 className='text-xl md:text-2xl font-semibold text-primary hover:text-primary/80'>
+                                <a
+                                    href={project.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    {project.title}
+                                    <BsArrowRightShort className='inline-block ml-1 -rotate-45' />
+                                </a>
+                            </h3>
+                            <span className='flex text-accent lg:hidden text-sm md:text-lg'>
+                                {project.year}
+                            </span>
+                            <p className='text-secondary text-sm md:text-base'>
                                 {project.description}
                             </p>
                             <div className='flex flex-wrap gap-2'>
