@@ -6,7 +6,7 @@ export default function Hero() {
 
     const downloadCV = () => {
         const link = document.createElement('a');
-        link.href = 'Angeles_Kyla_Marie_Resume.pdf';
+        link.href = 'Kyla_Marie_Angeles_Resume_Public.pdf';
         link.download = 'Angeles_Kyla_Marie_Resume.pdf';
         link.click();
         link.remove();
