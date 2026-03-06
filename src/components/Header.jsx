@@ -5,7 +5,7 @@ const Header = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <header className="fixed top-0 left-0 right-0 z-10 px-6 sm:px-12 py-6 flex justify-between items-center backdrop-blur-xl bg-bg/80 border-b border-border/50">
+        <header className="fixed top-0 left-0 right-0 z-10 px-6 py-4 md:px-12 md:py-6 flex justify-between items-center backdrop-blur-xl bg-bg/80 border-b border-border/50">
 
             <a href="#hero" className="font-dm-serif text-lg text-accent tracking-wide">
                 K.M.A

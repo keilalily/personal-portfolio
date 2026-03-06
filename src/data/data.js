@@ -1,6 +1,7 @@
 import { assets } from "../assets/assets";
 import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
+import { parseExperienceYears, countUniqueClients } from "./dataHelpers";
 
 export const navLinks = {
     about: {
@@ -23,13 +24,6 @@ export const navLinks = {
         label: 'Contact',
         href: '#contact'
     }
-}
-
-export const aboutMe = {
-    name: 'Kyla Marie Angeles',
-    title: 'Frontend Developer',
-    description: 'From landing pages to full platforms, I build fast and flexible web experiences.',
-    introduction: 'I am a Computer Technology student with a passion for building modern web applications. I enjoy turning ideas into functional digital experiences and am always eager to learn new tools and technologies. As a fast learner with a growth mindset, I am constantly looking for opportunities to improve and take on new challenges.'
 }
 
 export const socialLinks = {
@@ -76,6 +70,24 @@ export const skillSet = [
 
 export const experiences = [
     {
+        title: 'Junior Frontend Developer',
+        company: 'Parallel Quantum',
+        year: 'Oct 2025 - Present',
+        description: [
+            'Developed and maintained cross-platform web applications using modern frontend technologies.',
+            'Collaborated closely with the team to implement responsive UI and ensure high performance.',
+        ]
+    },
+    {
+        title: 'React Native Developer',
+        company: 'Numberfit Limited',
+        year: 'Jul 2025 - Sep 2025',
+        description: [
+            'Developed a cross-platform scavenger hunt app for iOS and Android with features like QR code scanning, GPS navigation, age-specific questions, user registration, scoring, and a leaderboard.',
+            'Integrated Firebase for backend services and translated Canva designs into functional UI.'
+        ]
+    },
+    {
         title: 'Web Developer Intern',
         company: 'Arcvis Digital Design Services',
         year: 'Jan 2025 - May 2025',
@@ -83,8 +95,7 @@ export const experiences = [
             'Built a full-stack website using MongoDB, Express.js, React.js, and Node.js to promote company services.',
             'Developed a custom admin dashboard for managing projects (create, update, delete).',
             'Delivered a responsive, user-friendly design and optimized backend performance.'
-        ],
-        logo: assets.arcvisLogo
+        ]
     }
 ]
 
@@ -125,3 +136,22 @@ export const projects = [
         link: 'https://youtu.be/SCuGbweG-p4?si=vQuE7eh7H7SOVtU7'
     },
 ]
+
+export const stats = {
+    projects: {
+        stat: projects.length,
+        label: "Projects Built"
+    },
+    experiences: {
+        stat: parseExperienceYears(experiences),
+        label: "Years Experience"
+    },
+    technologies: {
+        stat: skillSet.length,
+        label: "Technologies"
+    },
+    clients: {
+        stat: countUniqueClients(experiences),
+        label: "Clients Served"
+    },
+}
