@@ -1,5 +1,5 @@
 import { useRef, useEffect } from 'react';
-import { About, Experiences, Hero, Header, Projects, SkillSet } from './components';
+import { About, Experiences, Footer, Hero, Header, Projects, SkillSet } from './components';
 
 function App() {
 	const glowRef = useRef(null);
@@ -83,6 +83,7 @@ function App() {
 			<SkillSet />
 			<Experiences />
 			<Projects />
+			<Footer />
 		</main>
 	);
 }

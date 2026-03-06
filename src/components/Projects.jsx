@@ -1,8 +1,6 @@
 import { projects } from "../data/data";
-import { BsArrowRightShort } from "react-icons/bs";
-import Chip from "./Chip";
 
-export default function Projects() {
+const Projects = () => {
     return (
         <section id="projects" className="section">
             <div className="reveal">
@@ -49,3 +47,5 @@ export default function Projects() {
         </section>
     )
 }
+
+export default Projects;

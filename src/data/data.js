@@ -29,15 +29,18 @@ export const navLinks = {
 export const socialLinks = {
     github: {
         link: 'https://github.com/keilalily',
-        icon: FaGithub
+        icon: FaGithub,
+        label: "GitHub"
     },
     linkedin: {
         link: 'https://www.linkedin.com/in/kyla-marie-angeles/',
-        icon: FaLinkedin
+        icon: FaLinkedin,
+        label: "LinkedIn"
     },
     email: {
         link: 'mailto:kylamarieangeles@gmail.com',
-        icon: HiOutlineMail
+        icon: HiOutlineMail,
+        label: "Email"
     }
 }
 
