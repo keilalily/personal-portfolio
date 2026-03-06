@@ -7,7 +7,7 @@ const About = () => {
                 <div className="section-label">01 — About</div>
                 <h2 className="section-title">Building for the modern web.</h2>
             </div>
-            <div className="reveal grid grid-cols-1 md:grid-cols-2 gap-16 max-w-6xl delay-15">
+            <div className="reveal grid grid-cols-1 md:grid-cols-2 gap-16 max-w-full md:max-w-9/10 delay-15">
                 <div className="text-text-muted text-small font-light">
                     I'm a <strong className="text-text font-medium">Frontend Developer</strong> with a passion for building modern web applications. I enjoy turning ideas into functional digital experiences and continuously expanding my skill set with new tools and technologies.
                     <br/><br/>

@@ -7,7 +7,7 @@ const Experiences = () => {
                 <div className="section-label">03 — Experience</div>
                 <h2 className="section-title">Where I've contributed.</h2>
             </div>
-            <div className={`reveal max-w-full relative delay-15 before:content-[''] before:absolute
+            <div className={`reveal max-w-full md:max-w-9/10 relative delay-15 before:content-[''] before:absolute
                 before:top-0 before:left-0 before:bottom-0 before:w-px before:bg-gradient-to-b
                 before:from-accent before:via-border before:to-transparent`}
             >
@@ -18,7 +18,7 @@ const Experiences = () => {
                         <div className="font-jetbrains text-xs text-accent mb-2 tracking-wide">
                             {exp.year}
                         </div>
-                        <div className="font-dm-serif text-2xl mb-1">
+                        <div className="font-dm-serif text-2xl mb-1 tracking-wide">
                             {exp.title}
                         </div>
                         <div className="text-base text-text-muted mb-4 font-light">

@@ -33,12 +33,12 @@
 		background-image: linear-gradient(to bottom, var(--color-accent), transparent);
 	}
 
-	.bg-gradient-accent-glow {
-		background-image: linear-gradient(135deg, var(--color-accent-glow), transparent);
-	}
-
 	.grid-cols-auto-fit-160 {
 		grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+	}
+
+	.grid-cols-auto-fit-340 {
+		grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
 	}
 }
 

@@ -82,6 +82,7 @@ function App() {
 			<About />
 			<SkillSet />
 			<Experiences />
+			<Projects />
 		</main>
 	);
 }
