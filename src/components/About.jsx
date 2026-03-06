@@ -1,36 +1,23 @@
-import { aboutMe, skillSet } from "../data/data";
+import { stats } from "../data/data";
 
-export default function About() {
+const About = () => {
     return (
-        <section 
-            id="about"
-            className='section'
-        >
-            <h2 className='heading-2'>
-                About
-            </h2>
-            <p className='text-secondary text-sm md:text-lg'>
-                {aboutMe.introduction}
-            </p>
-            <div className='flex flex-col gap-2 md:gap-3'>
-                <h3 className='text-xl md:text-2xl font-semibold text-primary'>
-                    Skill Set
-                </h3>
-                <div className='flex flex-wrap'>
-                    {skillSet.map((skill, index) => (
-                        <div
-                            key={index}
-                            className='flex items-center gap-4 border-2 border-secondary/10
-                                w-1/2 md:w-1/3 px-6 py-3 md:px-10 md:py-5 md:flex-col'
-                        >
-                            <img
-                                src={skill.icon}
-                                alt={`${skill.name} logo`}
-                                className='w-8 h-8 md:w-14 md:h-14'
-                            />
-                            <span className='text-primary text-sm md:text-lg'>
-                                {skill.name}
-                            </span>
+        <section id="about" className="section">
+            <div className="reveal">
+                <div className="section-label">01 — About</div>
+                <h2 className="section-title">Building for the modern web.</h2>
+            </div>
+            <div className="reveal grid grid-cols-1 md:grid-cols-2 gap-16 max-w-full md:max-w-9/10 delay-15">
+                <div className="text-text-muted text-small font-light">
+                    I'm a <strong className="text-text font-medium">Frontend Developer</strong> with a passion for building modern web applications. I enjoy turning ideas into functional digital experiences and continuously expanding my skill set with new tools and technologies.
+                    <br/><br/>
+                    As a fast learner with a growth mindset, I'm constantly looking for opportunities to improve and take on new challenges — from crafting responsive interfaces to optimizing backend performance.
+                </div>
+                <div className="grid grid-cols-2 gap-6 content-start">
+                    {Object.entries(stats).map(([key, { stat, label }]) => (
+                        <div key={key} className="p-6 bg-surface border border-border rounded-xl transition-all duration-300 hover:border-accent hover:-translate-y-1">
+                            <div className="font-dm-serif text-3xl text-accent mb-1.5">{stat}</div>
+                            <div className="text-base text-text-muted tracking-wider">{label}</div>
                         </div>
                     ))}
                 </div>
@@ -38,3 +25,5 @@ export default function About() {
         </section>
     )
 }
+
+export default About;

@@ -1,100 +1,40 @@
-import { useState, useEffect } from "react";
-import { aboutMe, navLinks, socialLinks } from "../data/data";
-
-export default function Hero() {
-    const [active, setActive] = useState('#about');
-
-    const downloadCV = () => {
-        const link = document.createElement('a');
-        link.href = 'Kyla_Marie_Angeles_Resume_Public.pdf';
-        link.download = 'Angeles_Kyla_Marie_Resume.pdf';
-        link.click();
-        link.remove();
-    }
-
-    useEffect(() => {
-        const sections = Object.values(navLinks).map(link =>
-            document.querySelector(link.href)
-        );
-
-        const observer = new IntersectionObserver(
-            entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        setActive(`#${entry.target.id}`);
-                    }
-                });
-            },
-            {
-                root: null,
-                rootMargin: '0px 0px -60% 0px',
-                threshold: 0.1
-            }
-        );
-
-        sections.forEach(section => {
-            if (section) observer.observe(section);
-        });
-
-        return () => {
-            sections.forEach(section => {
-                if (section) observer.unobserve(section);
-            });
-        };
-    }, []);
-
+const Hero = () => {
     return (
-        <header className='flex flex-col gap-4 items-start lg:h-screen lg:justify-between p-8 md:p-16 lg:border-r lg:border-secondary/10'>
-            <div className='flex flex-col gap-2 md:gap-3'>
-                <h1 className='flex flex-col gap-2 font-poppins text-3xl md:text-4xl font-bold text-heading'>
-                    {aboutMe.name}
-                    <span className='font-inter font-semibold text-xl md:text-2xl'>
-                        {aboutMe.title}
-                    </span>
+        <section id="hero" className="min-h-screen flex items-center py-32 px-16 relative">
+            <div className="max-w-4xl relative z-1">
+                <div className={`inline-flex items-center gap-2.5 text-desc tracking-widest
+                    uppercase text-accent mb-8 font-medium opacity-0 animate-fade-up
+                    before:content-[''] before:w-10 before:h-px before:bg-accent`}
+                >
+                    Frontend Developer
+                </div>
+                <h1 className="font-dm-serif text-hero leading-[1.05] font-normal mb-6 opacity-0 animate-fade-up">
+                    Kyla Marie<br/><em className="italic text-accent">Angeles</em>
                 </h1>
-                <p className='font-inter text-secondary text-sm md:text-lg'>
-                    {aboutMe.description}
+                <p className="text-desc text-text-muted max-w-2xl leading-[1.8] font-light mb-10 opacity-0 animate-fade-up">
+                    From landing pages to full platforms, I build fast, flexible, and beautiful web experiences with modern technologies.
                 </p>
+                <div className="flex gap-4 opacity-0 animate-fade-up">
+                    <a href="#projects" className="btn-primary">View Projects</a>
+                    <a href="#contact" className="btn-outline">Get in Touch</a>
+                </div>
             </div>
-
-            <nav className='hidden lg:flex flex-col gap-8'>
-                {Object.entries(navLinks).map(([key, { label, href }]) => (
-                    <a
-                        key={key}
-                        href={href}
-                        className={`font-poppins text-heading uppercase tracking-50 text-xl w-fit relative
-                            after:absolute after:w-0 after:h-0.5 after:bg-heading after:bottom-0 after:left-0
-                            hover:after:content[""] hover:after:w-full hover:after:bg-heading
-                            after:transition-all after:duration-300
-                            ${active === href ? 'after:w-full' : 'after:w-0'}`}
-                    >
-                        {label}
-                    </a>
-                ))}
-            </nav>
-
-            <button
-                className='px-6 py-1.5 border-1 rounded-full text-heading font-poppins text-sm md:text-lg uppercase
-                    hover:bg-primary hover:text-background hover:cursor-pointer transition-all duration-300'
-                onClick={downloadCV}
-            >
-                Download CV
-            </button>
-
-            <div className='flex gap-2 md:gap-4'>
-                {Object.entries(socialLinks).map(([key, {link, icon: Icon}]) => (
-                    <a
-                        key={key}
-                        href={link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className=''
-                    >
-                        <Icon className='w-6 h-6 md:w-8 md:h-8 text-heading/75 hover:text-heading' />
-                        <span className='sr-only'>{key}</span>
-                    </a>
-                ))}
+            <div className="absolute right-1/12 top-1/2 -translate-y-1/2 w-96 h-96 opacity-50 z-0">
+                <svg className="w-full h-full" viewBox="0 0 400 400" fill="none">
+                    <circle cx="200" cy="200" r="180" stroke="var(--color-accent)" strokeWidth="0.5" opacity="0.4"/>
+                    <circle cx="200" cy="200" r="140" stroke="var(--color-accent)" strokeWidth="0.5" opacity="0.3"/>
+                    <circle cx="200" cy="200" r="100" stroke="var(--color-accent)" strokeWidth="0.5" opacity="0.2"/>
+                    <circle cx="200" cy="200" r="60" stroke="var(--color-accent)" strokeWidth="0.5" opacity="0.15"/>
+                    <line x1="20" y1="200" x2="380" y2="200" stroke="var(--color-accent)" strokeWidth="0.3" opacity="0.2"/>
+                    <line x1="200" y1="20" x2="200" y2="380" stroke="var(--color-accent)" strokeWidth="0.3" opacity="0.2"/>
+                </svg>
             </div>
-        </header>
+            <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-0 animate-fade-up">
+                <span className="text-xs tracking-25 uppercase text-text-muted">Scroll</span>
+                <div className="w-px h-10 bg-gradient-accent animate-scroll-pulse"></div>
+            </div>
+        </section>
     )
 }
+
+export default Hero;

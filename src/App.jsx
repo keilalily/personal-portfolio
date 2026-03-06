@@ -1,18 +1,89 @@
-import { About, Experiences, Hero, Projects } from './components/index.js';
+import { useRef, useEffect } from 'react';
+import { About, Experiences, Footer, Hero, Header, Projects, SkillSet } from './components';
 
 function App() {
-  return (
-    <main className='flex flex-col lg:flex-row bg-background'>
-      <div className="bg-textured lg:fixed lg:inset-y-0 lg:left-0 lg:w-1/3 xl:w-1/4">
-        <Hero />
-      </div>
-      <section className='flex flex-col grow gap-8 md:gap-12 p-8 md:p-16 w-full scroll-smooth lg:ml-[33.3333%] xl:ml-[25%] lg:h-screen lg:overflow-y-auto'>
-        <About />
-        <Experiences />
-        <Projects />
-      </section>
-    </main>
-  )
+	const glowRef = useRef(null);
+
+	useEffect(() => {
+		let mouseX = 0, mouseY = 0;
+		let glowX = 0, glowY = 0;
+
+		const handleMouseMove = (e) => {
+			mouseX = e.clientX;
+			mouseY = e.clientY;
+		};
+
+		document.addEventListener('mousemove', handleMouseMove);
+
+		const animateGlow = () => {
+			glowX += (mouseX - glowX) * 0.15; // smooth easing
+			glowY += (mouseY - glowY) * 0.15;
+
+			const glow = glowRef.current;
+			if (glow) {
+				glow.style.left = glowX + 'px';
+				glow.style.top = glowY + 'px';
+				glow.style.opacity = '1';
+			}
+
+			requestAnimationFrame(animateGlow);
+		};
+
+		animateGlow();
+
+		return () => {
+			document.removeEventListener('mousemove', handleMouseMove);
+		};
+	}, []);
+
+	useEffect(() => {
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) entry.target.classList.add('visible');
+				});
+			},
+			{ threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
+		);
+
+		document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+		const anchors = document.querySelectorAll('a[href^="#"]');
+		const handleClick = (e) => {
+			e.preventDefault();
+			const target = document.querySelector(e.currentTarget.getAttribute('href'));
+			if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+		};
+		anchors.forEach((anchor) => anchor.addEventListener('click', handleClick));
+
+		return () => {
+			observer.disconnect();
+			anchors.forEach((anchor) => anchor.removeEventListener('click', handleClick));
+		};
+	}, []);
+
+	return (
+		<main className="flex flex-col">
+			<div
+				ref={glowRef}
+				className="fixed w-[600px] h-[600px] rounded-full pointer-events-none z-0 opacity-0"
+				style={{
+				background:
+					'radial-gradient(circle, var(--color-accent-glow) 0%, transparent 70%)',
+				transform: 'translate(-50%, -50%)',
+				transition: 'opacity 0.3s',
+				}}
+			></div>
+
+			<Header />
+			<Hero />
+			<About />
+			<SkillSet />
+			<Experiences />
+			<Projects />
+			<Footer />
+		</main>
+	);
 }
 
-export default App
+export default App;

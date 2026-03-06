@@ -1,54 +1,51 @@
 import { projects } from "../data/data";
-import { BsArrowRightShort } from "react-icons/bs";
-import Chip from "./Chip";
 
-export default function Projects() {
+const Projects = () => {
     return (
-        <section
-            id="projects"
-            className='section'
-        >
-            <h2 className='heading-2'>
-                Projects
-            </h2>
-            <div className='flex flex-col gap-6 md:gap-6 w-full'>
-                {projects.map((project, index) => (
-                    <div
-                        key={index}
-                        className='flex flex-col w-full lg:flex-row lg:gap-6 rounded-lg border-2 border-transparent lg:p-6 lg:hover:border-secondary/10 lg:hover:shadow-lg transition-all duration-300'
+        <section id="projects" className="section">
+            <div className="reveal">
+                <div className="section-label">04 — Projects</div>
+                <h2 className="section-title">Selected work.</h2>
+            </div>
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-[repeat(auto-fit,_minmax(340px,_1fr))] gap-6 max-w-full md:max-w-9/10">
+                {projects.map((project, idx) => (
+                    <a
+                        key={idx}
+                        href={project.link}
+                        target="_blank"
+                        className={`reveal group bg-surface border border-border rounded-2xl p-8 transition-all duration-400
+                            relative overflow-hidden text-inherit block cursor-pointer delay-15 before:content-[''] before:absolute before:top-0
+                            before:left-0 before:right-0 before:h-1 before:bg-gradient-to-r before:from-accent before:to-transparent before:opacity-0
+                            before:transition-opacity before:duration-400 hover:border-accent/30 hover:shadow-2xl hover:before:opacity-100`}
                     >
-                        <span className='hidden text-accent lg:flex text-base w-1/6'>
+                        <div className="flex justify-between items-start mb-4">
+                            <div className="font-jetbrains text-xs text-accent tracking-wide">
                                 {project.year}
-                        </span>
-                        <div className='flex flex-col gap-1 lg:gap-3 w-full'>
-                            <h3 className='text-xl md:text-2xl font-semibold text-primary hover:text-primary/80'>
-                                <a
-                                    href={project.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    {project.title}
-                                    <BsArrowRightShort className='inline-block ml-1 -rotate-45' />
-                                </a>
-                            </h3>
-                            <span className='flex text-accent lg:hidden text-sm md:text-lg'>
-                                {project.year}
-                            </span>
-                            <p className='text-secondary text-sm md:text-base'>
-                                {project.description}
-                            </p>
-                            <div className='flex flex-wrap gap-2'>
-                                {project.tags.map((tag, tagIndex) => (
-                                    <Chip
-                                        key={tagIndex}
-                                        label={tag}
-                                    />
-                                ))}
                             </div>
+                            <span className="text-text-muted transition-all duration-300 text-xl group-hover:text-accent group-hover:translate-x-1 group-hover:-translate-y-1">
+                                ↗
+                            </span>
                         </div>
-                    </div>
+                        <div className="font-dm-serif text-2xl mb-3 leading-[1.3]">
+                            {project.title}
+                        </div>
+                        <p className="text-base text-text-muted font-light leading-[1.7] mb-5">
+                            {project.description}
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                            {project.tags.map((tag) => (
+                                <span className="font-jetbrains text-xs py-1.5 px-3 bg-surface-2 border border-border
+                                    rounded-full text-text-muted transition-all duration-300 group-hover:border-accent/20"
+                                >
+                                    {tag}
+                                </span>
+                            ))}
+                        </div>
+                    </a>
                 ))}
             </div>
         </section>
     )
 }
+
+export default Projects;
