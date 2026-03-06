@@ -2,7 +2,7 @@ const Hero = () => {
     return (
         <section id="hero" className="min-h-screen flex items-center py-32 px-16 relative">
             <div className="max-w-4xl relative z-1">
-                <div className={`inline-flex items-center gap-2.5 text-base tracking-widest
+                <div className={`inline-flex items-center gap-2.5 text-desc tracking-widest
                     uppercase text-accent mb-8 font-medium opacity-0 animate-fade-up
                     before:content-[''] before:w-10 before:h-px before:bg-accent`}
                 >

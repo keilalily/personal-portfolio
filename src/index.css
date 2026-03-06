@@ -32,14 +32,6 @@
 	.bg-gradient-accent {
 		background-image: linear-gradient(to bottom, var(--color-accent), transparent);
 	}
-
-	.grid-cols-auto-fit-160 {
-		grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-	}
-
-	.grid-cols-auto-fit-340 {
-		grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-	}
 }
 
 body {
