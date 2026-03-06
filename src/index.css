@@ -157,6 +157,12 @@ body::before {
     50% { opacity: 0.3; transform: scaleY(0.6); }
 }
 
+@media (max-width: 768px) {
+	.section {
+		padding: 4rem 1.5rem;
+	}
+}
+
 :root {
   line-height: 1.5;
   font-synthesis: none;
