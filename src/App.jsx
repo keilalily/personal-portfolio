@@ -4,7 +4,6 @@ import { About, Experiences, Footer, Hero, Header, Projects, SkillSet } from './
 function App() {
 	const glowRef = useRef(null);
 
-	// Cursor glow with smooth trailing
 	useEffect(() => {
 		let mouseX = 0, mouseY = 0;
 		let glowX = 0, glowY = 0;
@@ -37,7 +36,6 @@ function App() {
 		};
 	}, []);
 
-	// Scroll reveal & smooth nav scrolling
 	useEffect(() => {
 		const observer = new IntersectionObserver(
 			(entries) => {
