@@ -7,7 +7,7 @@ const Projects = () => {
                 <div className="section-label">04 — Projects</div>
                 <h2 className="section-title">Selected work.</h2>
             </div>
-            <div className="grid grid-cols-[repeat(auto-fit,_minmax(340px,_1fr))] gap-6 max-w-full md:max-w-9/10">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-[repeat(auto-fit,_minmax(340px,_1fr))] gap-6 max-w-full md:max-w-9/10">
                 {projects.map((project, idx) => (
                     <a
                         key={idx}
