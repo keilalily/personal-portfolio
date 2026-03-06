@@ -1,4 +1,4 @@
-export default function Hero() {
+const Hero = () => {
     return (
         <section id="hero" className="min-h-screen flex items-center py-32 px-16 relative">
             <div className="max-w-4xl relative z-1">
@@ -36,3 +36,5 @@ export default function Hero() {
         </section>
     )
 }
+
+export default Hero;

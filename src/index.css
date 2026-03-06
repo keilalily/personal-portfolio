@@ -37,6 +37,14 @@
 	.bg-gradient-accent {
 		background-image: linear-gradient(to bottom, var(--color-accent), transparent);
 	}
+
+	.bg-gradient-accent-glow {
+		background-image: linear-gradient(135deg, var(--color-accent-glow), transparent);
+	}
+
+	.grid-cols-auto-fit-160 {
+		grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+	}
 }
 
 body {
@@ -152,12 +160,6 @@ body::before {
 @keyframes scrollPulse {
     0%, 100% { opacity: 1; transform: scaleY(1); }
     50% { opacity: 0.3; transform: scaleY(0.6); }
-}
-
-.bg-textured {
-  background-image: url('assets/asfalt-dark.png');
-  background-repeat: repeat;
-  background-size: auto;
 }
 
 :root {

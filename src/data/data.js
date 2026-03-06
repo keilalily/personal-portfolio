@@ -71,7 +71,7 @@ export const skillSet = [
 export const experiences = [
     {
         title: 'Junior Frontend Developer',
-        company: 'Parallel Quantum',
+        company: 'Parallel Quantum Corp',
         year: 'Oct 2025 - Present',
         description: [
             'Developed and maintained cross-platform web applications using modern frontend technologies.',

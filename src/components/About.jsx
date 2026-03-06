@@ -1,6 +1,6 @@
 import { stats } from "../data/data";
 
-export default function About() {
+const About = () => {
     return (
         <section id="about" className="section">
             <div className="reveal">
@@ -25,3 +25,5 @@ export default function About() {
         </section>
     )
 }
+
+export default About;

@@ -5,8 +5,6 @@ import nodejsLogo from './nodejs-logo.svg';
 import reactLogo from './react-logo.svg';
 import tailwindLogo from './tailwind-logo.svg';
 
-import arcvisLogo from './arcvis-logo.jpg';
-
 export const assets = {
     jsLogo,
     mongodbLogo,
@@ -14,5 +12,4 @@ export const assets = {
     nodejsLogo,
     reactLogo,
     tailwindLogo,
-    arcvisLogo
 }
