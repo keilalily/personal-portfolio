@@ -4,7 +4,7 @@ const Hero = () => {
             <div className="max-w-4xl relative z-1">
                 <div className={`inline-flex items-center gap-2.5 text-base tracking-widest
                     uppercase text-accent mb-8 font-medium opacity-0 animate-fade-up
-                    before:content[''] before:w-10 before:h-px before:bg-accent`}
+                    before:content-[''] before:w-10 before:h-px before:bg-accent`}
                 >
                     Frontend Developer
                 </div>

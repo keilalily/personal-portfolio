@@ -7,10 +7,10 @@ const SkillSet = () => {
                 <div className="section-label">02 — Skill Set</div>
                 <h2 className="section-title">Tools I work with.</h2>
             </div>
-            <div className="grid grid-cols-auto-fit-160 gap-4 max-w-full delay-15 reveal">
-                {skillSet.map(({name, icon}) => (
+            <div className="reveal grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-auto-fit-160 gap-4 max-w-full delay-15">
+                {skillSet.map(({ name, icon }) => (
                     <div className={`py-7 px-5 bg-surface-2 border border-border rounded-xl text-center transition-all
-                        duration-400 relative overflow-hidden before:content[''] before:absolute before:inset-0
+                        duration-400 relative overflow-hidden before:content-[''] before:absolute before:inset-0
                         before:bg-gradient-accent-glow before:opacity-0 before:transition-opacity before:duration-400
                         hover:border-accent hover:-translate-y-1 before:hover:opacity-100`}
                     >

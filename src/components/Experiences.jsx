@@ -1,49 +1,43 @@
 import { experiences } from "../data/data";
 
-export default function Experiences() {
+const Experiences = () => {
     return (
-        <section
-            id="experiences"
-            className="section"
-        >
-            <h2 className="heading-2">
-                Experiences
-            </h2>
-            <div className="flex w-full gap-6">
-                {experiences.map((experience, index) => (
-                    <>
-                        <div className="flex items-start rounded w-20">
-                            <img
-                                src={experience.logo}
-                                alt={`${experience.company} logo`}
-                                className="w-full object-contain rounded"
-                            />
+        <section id="experience" className="section">
+            <div className="reveal">
+                <div className="section-label">03 — Experience</div>
+                <h2 className="section-title">Where I've contributed.</h2>
+            </div>
+            <div className={`reveal max-w-full relative delay-15 before:content-[''] before:absolute
+                before:top-0 before:left-0 before:bottom-0 before:w-px before:bg-gradient-to-b
+                before:from-accent before:via-border before:to-transparent`}
+            >
+                {experiences.map((exp, idx) => (
+                    <div key={idx} className={`pl-12 pb-8 relative before:content-[''] before:absolute before:-left-1 before:top-2
+                        before:w-2.25 before:h-2.25 before:rounded-full before:bg-accent before:border before:border-bg`}
+                    >
+                        <div className="font-jetbrains text-xs text-accent mb-2 tracking-wide">
+                            {exp.year}
                         </div>
-                        <div
-                            key={index}
-                            className="relative flex flex-col"
-                        >
-                            <h3 className="text-xl md:text-2xl font-semibold text-primary">
-                                {experience.title}
-                            </h3>
-                            <p className="text-primary/90 text-base md:text-lg">
-                                {experience.company}
-                            </p>
-                            <p className="text-accent text-sm md:text-base">
-                                {experience.year}
-                            </p>
-                            <ul className="flex flex-col text-secondary text-sm md:text-base">
-                                {experience.description.map((desc, index) => (
-                                    <li key={index} className="flex items-baseline gap-4">
-                                        <span class="bullet"></span>
-                                        {desc}
-                                    </li>
-                                ))}
-                            </ul>
+                        <div className="font-dm-serif text-2xl mb-1">
+                            {exp.title}
                         </div>
-                    </>
+                        <div className="text-base text-text-muted mb-4 font-light">
+                            {exp.company}
+                        </div>
+                        <ul className="flex flex-col gap-2">
+                            {exp.description.map((desc, idx) => (
+                                <li key={idx} className={`text-text-muted font-light text-base pl-5 relative
+                                    before:content-['→'] before:absolute before:left-0 before:text-accent before:text-sm`}
+                                >
+                                    {desc}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 ))}
             </div>
         </section>
     )
 }
+
+export default Experiences;

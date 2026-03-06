@@ -28,7 +28,7 @@ const Header = () => {
                         <a
                             key={key}
                             href={href}
-                            className={`text-text-muted text-sm font-medium tracking-widest uppercase transition-colors duration-300 relative after:content['']
+                            className={`text-text-muted text-sm font-medium tracking-widest uppercase transition-colors duration-300 relative after:content-['']
                                 after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-px after:bg-accent after:transition-width after:duration-300
                                 hover:text-accent hover:after:w-full last:py-2.5 last:px-6 last:border last:border-accent last:rounded-full last:transition-all
                                 last:duration-300 last:ease-in last:hover:bg-accent last:hover:text-bg last:hover:after:hidden`}
