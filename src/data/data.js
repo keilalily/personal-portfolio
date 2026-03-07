@@ -104,8 +104,36 @@ export const experiences = [
 
 export const projects = [
     {
+        title: 'Memory Game',
+        description: 'A responsive card matching game where players flip tiles to find matching pairs and complete the board.',
+        year: 'Oct 2025',
+        tags: ['React', 'SASS'],
+        link: 'https://memory-game-seven-ruby.vercel.app/'
+    },
+    // {
+    //     title: 'PC Bulacan Rewards',
+    //     description: 'A rewards management website where customers can check points and redeem items, with an admin dashboard for managing users and rewards.',
+    //     year: 'Aug 2025 - Sep 2025',
+    //     tags: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB'],
+    //     link: 'https://rewards-pcb.vercel.app/'
+    // },
+    // {
+    //     title: 'Maths Scavenger Hunt App',
+    //     description: 'A mobile scavenger hunt app where players solve math problems to unlock clues and progress through locations.',
+    //     year: 'Aug 2025 - Sep 2025',
+    //     tags: ['React Native', 'Firebase'],
+    //     link: ''
+    // },
+    {
+        title: 'Realtor Website',
+        description: 'A responsive real estate website redesign created as a technical assessment for a job application.',
+        year: 'Aug 2025',
+        tags: ['React', 'Tailwind CSS'],
+        link: 'https://marci-metzger-theta.vercel.app/'
+    },
+    {
         title: 'Tic-Tac-Toe Game',
-        description: 'A simple, modern Tic-Tac-Toe game built with Next.js 14 App Router, Tailwind CSS, and shadcn/ui. It lets players choose X or O, track their score, and reset the board.',
+        description: 'A simple, modern Tic-Tac-Toe game that lets players choose X or O, track their score, and reset the board.',
         year: 'Jul 2025',
         tags: ['Next.js', 'Tailwind CSS'],
         link: 'https://tic-tac-toe-game-ecru-kappa.vercel.app/'
@@ -118,14 +146,14 @@ export const projects = [
         link: 'https://country-quiz-master-phi.vercel.app/'
     },
     {
-        title: 'Arcvis Digital Design Services Website',
+        title: 'Arcvis Digital Design Services',
         description: 'A full-stack web application built to present company services and projects. Includes a custom appointment booking system to schedule meetings directly with the owner.',
         year: 'Jan 2025 - May 2025',
-        tags: ['React', 'Node.js', 'MongoDB'],
+        tags: ['React', 'Node.js', 'Express.js', 'MongoDB'],
         link: 'https://arcvisdesigns.onrender.com/'
     },
     {
-        title: 'Space Tourism Website',
+        title: 'Space Tourism',
         description: 'A responsive multi-page website developed based on a Frontend Mentor design challenge.',
         year: 'Apr 2025',
         tags: ['React', 'Tailwind CSS'],
