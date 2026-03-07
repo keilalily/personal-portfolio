@@ -129,7 +129,7 @@ export const projects = [
         description: 'A responsive multi-page website developed based on a Frontend Mentor design challenge.',
         year: 'Apr 2025',
         tags: ['React', 'Tailwind CSS'],
-        link: 'https://keilalily.github.io/fm-space-tourism-website/'
+        link: 'https://spacetourism-murex.vercel.app/'
     },
     {
         title: 'IMPRINTA',
