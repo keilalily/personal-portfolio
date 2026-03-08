@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { projects } from "../../data/data";
 import ProjectModal from "../ui/ProjectModal";
+import { FiExternalLink, FiEye } from "react-icons/fi";
 
 const Projects = () => {
     const [selectedProject, setSelectedProject] = useState(null);
@@ -35,7 +36,7 @@ const Projects = () => {
                                     {project.year}
                                 </div>
                                 <span className="text-text-muted transition-all duration-300 text-xl group-hover:text-accent group-hover:translate-x-1 group-hover:-translate-y-1">
-                                    {project.link ? "↗" : "👁"}
+                                    {project.link ? <FiExternalLink /> : <FiEye />}
                                 </span>
                             </div>
                             <div className="font-dm-serif text-2xl mb-3 leading-[1.3]">
