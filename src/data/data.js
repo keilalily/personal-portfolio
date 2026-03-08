@@ -45,30 +45,22 @@ export const socialLinks = {
 }
 
 export const skillSet = [
-    {
-        name: 'React',
-        icon: assets.reactLogo
-    },
-    {
-        name: 'Next.js',
-        icon: assets.nextjsLogo
-    },
-    {
-        name: 'Tailwind CSS',
-        icon: assets.tailwindLogo
-    },
-    {
-        name: 'JavaScript',
-        icon: assets.jsLogo
-    },
-    {
-        name: 'Node.js',
-        icon: assets.nodejsLogo
-    },
-    {
-        name: 'MongoDB',
-        icon: assets.mongodbLogo
-    }
+    { name: 'JavaScript', icon: assets.jsLogo },
+    { name: 'TypeScript', icon: assets.typescriptLogo },
+
+    { name: 'React', icon: assets.reactLogo },
+    { name: 'Next.js', icon: assets.nextjsLogo },
+    { name: 'Tailwind CSS', icon: assets.tailwindLogo },
+
+    { name: 'React Native', icon: assets.reactLogo },
+
+    { name: 'Node.js', icon: assets.nodejsLogo },
+    { name: 'Express.js', icon: assets.expressLogo },
+
+    { name: 'MongoDB', icon: assets.mongodbLogo },
+
+    { name: 'Git', icon: assets.gitLogo },
+    { name: 'Postman', icon: assets.postmanLogo }
 ];
 
 export const experiences = [
