@@ -1,5 +1,5 @@
 import { useRef, useEffect } from 'react';
-import { About, Experiences, Footer, Hero, Header, Projects, SkillSet } from './components';
+import { About, Experiences, Footer, Hero, Header, Projects, SkillSet } from './components/sections';
 
 function App() {
 	const glowRef = useRef(null);
@@ -16,7 +16,7 @@ function App() {
 		document.addEventListener('mousemove', handleMouseMove);
 
 		const animateGlow = () => {
-			glowX += (mouseX - glowX) * 0.15; // smooth easing
+			glowX += (mouseX - glowX) * 0.15;
 			glowY += (mouseY - glowY) * 0.15;
 
 			const glow = glowRef.current;

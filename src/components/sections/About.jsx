@@ -1,4 +1,4 @@
-import { stats } from "../data/data";
+import { stats } from "../../data/data";
 
 const About = () => {
     return (

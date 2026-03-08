@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { navLinks } from "../data/data";
+import { navLinks } from "../../data/data";
 
 const Header = () => {
     const [open, setOpen] = useState(false);
