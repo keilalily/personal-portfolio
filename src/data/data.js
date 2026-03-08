@@ -1,5 +1,5 @@
 import { assets } from "../assets/assets";
-import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { parseExperienceYears, countUniqueClients } from "./dataHelpers";
 
@@ -45,30 +45,22 @@ export const socialLinks = {
 }
 
 export const skillSet = [
-    {
-        name: 'React',
-        icon: assets.reactLogo
-    },
-    {
-        name: 'Next.js',
-        icon: assets.nextjsLogo
-    },
-    {
-        name: 'Tailwind CSS',
-        icon: assets.tailwindLogo
-    },
-    {
-        name: 'JavaScript',
-        icon: assets.jsLogo
-    },
-    {
-        name: 'Node.js',
-        icon: assets.nodejsLogo
-    },
-    {
-        name: 'MongoDB',
-        icon: assets.mongodbLogo
-    }
+    { name: 'JavaScript', icon: assets.jsLogo },
+    { name: 'TypeScript', icon: assets.typescriptLogo },
+
+    { name: 'React', icon: assets.reactLogo },
+    { name: 'Next.js', icon: assets.nextjsLogo },
+    { name: 'Tailwind CSS', icon: assets.tailwindLogo },
+
+    { name: 'React Native', icon: assets.reactLogo },
+
+    { name: 'Node.js', icon: assets.nodejsLogo },
+    { name: 'Express.js', icon: assets.expressLogo },
+
+    { name: 'MongoDB', icon: assets.mongodbLogo },
+
+    { name: 'Git', icon: assets.gitLogo },
+    { name: 'Postman', icon: assets.postmanLogo }
 ];
 
 export const experiences = [
@@ -117,13 +109,19 @@ export const projects = [
     //     tags: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB'],
     //     link: 'https://rewards-pcb.vercel.app/'
     // },
-    // {
-    //     title: 'Maths Scavenger Hunt App',
-    //     description: 'A mobile scavenger hunt app where players solve math problems to unlock clues and progress through locations.',
-    //     year: 'Aug 2025 - Sep 2025',
-    //     tags: ['React Native', 'Firebase'],
-    //     link: ''
-    // },
+    {
+        title: 'Maths Scavenger Hunt App',
+        description: 'A mobile scavenger hunt app where players solve math problems to unlock clues and progress through locations.',
+        year: 'Aug 2025 - Sep 2025',
+        tags: ['React Native', 'Firebase'],
+        images: [
+            '/projects/scavenger-hunt/home.webp',
+            '/projects/scavenger-hunt/scan.webp',
+            '/projects/scavenger-hunt/map.webp',
+            '/projects/scavenger-hunt/age.webp',
+            '/projects/scavenger-hunt/question.webp'
+        ]
+    },
     {
         title: 'Realtor Website',
         description: 'A responsive real estate website redesign created as a technical assessment for a job application.',

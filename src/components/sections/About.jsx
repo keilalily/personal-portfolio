@@ -1,4 +1,4 @@
-import { stats } from "../data/data";
+import { stats } from "../../data/data";
 
 const About = () => {
     return (
@@ -9,7 +9,7 @@ const About = () => {
             </div>
             <div className="reveal grid grid-cols-1 md:grid-cols-2 gap-16 max-w-full md:max-w-9/10 delay-15">
                 <div className="text-text-muted text-small font-light">
-                    I'm a <strong className="text-text font-medium">Frontend Developer</strong> with a passion for building modern web applications. I enjoy turning ideas into functional digital experiences and continuously expanding my skill set with new tools and technologies.
+                    I'm an entry-level <strong className="text-text font-medium">Frontend Developer</strong> with a passion for building modern web applications. I enjoy turning ideas into functional digital experiences and continuously expanding my skill set with new tools and technologies.
                     <br/><br/>
                     As a fast learner with a growth mindset, I'm constantly looking for opportunities to improve and take on new challenges — from crafting responsive interfaces to optimizing backend performance.
                 </div>

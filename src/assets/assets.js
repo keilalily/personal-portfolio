@@ -1,9 +1,13 @@
-import jsLogo from './js-logo.svg';
-import mongodbLogo from './mongodb-logo.svg';
-import nextjsLogo from './nextjs-logo.svg';
-import nodejsLogo from './nodejs-logo.svg';
-import reactLogo from './react-logo.svg';
-import tailwindLogo from './tailwind-logo.svg';
+import jsLogo from './logo/js-logo.svg';
+import mongodbLogo from './logo/mongodb-logo.svg';
+import nextjsLogo from './logo/nextjs-logo.svg';
+import nodejsLogo from './logo/nodejs-logo.svg';
+import reactLogo from './logo/react-logo.svg';
+import tailwindLogo from './logo/tailwind-logo.svg';
+import postmanLogo from './logo/postman-logo.svg';
+import typescriptLogo from './logo/typescript-logo.svg';
+import gitLogo from './logo/git-logo.svg';
+import expressLogo from './logo/express-logo.svg';
 
 export const assets = {
     jsLogo,
@@ -12,4 +16,8 @@ export const assets = {
     nodejsLogo,
     reactLogo,
     tailwindLogo,
+    postmanLogo,
+    typescriptLogo,
+    gitLogo,
+    expressLogo
 }

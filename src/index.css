@@ -51,6 +51,10 @@ body::before {
     z-index: 9999;
 }
 
+body.modal-open {
+  	overflow: hidden;
+}
+
 ::selection {
   	background: var(--color-accent);
     color: var(--color-bg);
@@ -137,6 +141,19 @@ body::before {
 .reveal.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+::-webkit-scrollbar {
+  	width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--color-surface-2);
+	border-radius: 10px;
 }
 
 @keyframes fadeUp {
