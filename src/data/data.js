@@ -50,7 +50,9 @@ export const skillSet = [
 
     { name: 'React', icon: assets.reactLogo },
     { name: 'Next.js', icon: assets.nextjsLogo },
+
     { name: 'Tailwind CSS', icon: assets.tailwindLogo },
+    { name: 'Sass', icon: assets.sassLogo },
 
     { name: 'React Native', icon: assets.reactLogo },
 
