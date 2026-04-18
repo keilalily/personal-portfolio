@@ -8,6 +8,7 @@ import postmanLogo from './logo/postman-logo.svg';
 import typescriptLogo from './logo/typescript-logo.svg';
 import gitLogo from './logo/git-logo.svg';
 import expressLogo from './logo/express-logo.svg';
+import sassLogo from './logo/sass-logo.svg';
 
 export const assets = {
     jsLogo,
@@ -19,5 +20,6 @@ export const assets = {
     postmanLogo,
     typescriptLogo,
     gitLogo,
-    expressLogo
+    expressLogo,
+    sassLogo
 }
