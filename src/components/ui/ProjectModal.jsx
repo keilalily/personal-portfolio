@@ -37,7 +37,7 @@ const ProjectModal = ({ project, onClose }) => {
             onClick={onClose}    
         >
             <div
-                className="bg-surface max-h-4/5 max-w-5xl w-full rounded-2xl p-10 relative overflow-y-scroll modal-scroll"
+                className="bg-surface-modal max-h-4/5 max-w-5xl w-full rounded-2xl p-10 relative overflow-y-scroll modal-scroll"
                 onClick={(e) => e.stopPropagation()}
             >
                 
