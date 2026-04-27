@@ -98,6 +98,13 @@ export const experiences = [
 
 export const projects = [
     {
+        title: 'Arcvis Digital Design Services v2',
+        description: 'A complete visual overhaul of the original Arcvis website — elevated with a premium navy-and-gold identity, refined typography, and a streamlined user experience.',
+        year: 'April 2026',
+        tags: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB'],
+        link: 'https://v2-arcvisdesigns.onrender.com/'
+    },
+    {
         title: 'Memory Game',
         description: 'A responsive card matching game where players flip tiles to find matching pairs and complete the board.',
         year: 'Oct 2025',
