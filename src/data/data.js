@@ -98,11 +98,12 @@ export const experiences = [
 
 export const projects = [
     {
-        title: 'Arcvis Digital Design Services v2',
-        description: 'A complete visual overhaul of the original Arcvis website — elevated with a premium navy-and-gold identity, refined typography, and a streamlined user experience.',
-        year: 'April 2026',
+        title: 'Arcvis Digital Design Services',
+        description: 'A full-stack web app for presenting company services with a custom appointment booking system. Redesigned a year later with a premium navy-and-gold identity, removing all UI libraries (MUI, Swiper) in favor of fully custom components.',
+        year: 'Jan 2025 — Apr 2026',
         tags: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB'],
-        link: 'https://v2-arcvisdesigns.onrender.com/'
+        link: 'https://v2-arcvisdesigns.onrender.com/',
+        linkV1: 'https://arcvisdesigns.onrender.com/',
     },
     {
         title: 'Memory Game',
@@ -151,13 +152,6 @@ export const projects = [
         year: 'Jun 2025',
         tags: ['React', 'Tailwind CSS'],
         link: 'https://country-quiz-master-phi.vercel.app/'
-    },
-    {
-        title: 'Arcvis Digital Design Services',
-        description: 'A full-stack web application built to present company services and projects. Includes a custom appointment booking system to schedule meetings directly with the owner.',
-        year: 'Jan 2025 - May 2025',
-        tags: ['React', 'Node.js', 'Express.js', 'MongoDB'],
-        link: 'https://arcvisdesigns.onrender.com/'
     },
     {
         title: 'Space Tourism',
