@@ -54,6 +54,19 @@ const Projects = () => {
                                     </span>
                                 ))}
                             </div>
+
+                            {project.linkV1 && (
+                                <a
+                                    href={project.linkV1}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    onClick={(e) => e.stopPropagation()}
+                                    className="inline-flex items-center gap-1.5 mt-5 font-jetbrains text-xs text-text-muted
+                                        hover:text-accent transition-colors duration-300"
+                                >
+                                    View original version <FiExternalLink className="text-[10px]" />
+                                </a>
+                            )}
                         </Card>
                     )
                 })}
