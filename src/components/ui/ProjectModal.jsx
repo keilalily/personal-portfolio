@@ -43,7 +43,7 @@ const ProjectModal = ({ project, onClose }) => {
                 
                 <button
                     onClick={onClose}
-                    className="absolute top-4 right-4 text-xl text-text-muted hover:text-white"
+                    className="absolute top-4 right-4 text-xl text-text-muted cursor-pointer hover:text-accent"
                 >
                     ✕
                 </button>

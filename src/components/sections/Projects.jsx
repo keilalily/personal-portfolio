@@ -32,10 +32,13 @@ const Projects = () => {
                                 before:transition-opacity before:duration-400 hover:border-accent/30 hover:shadow-2xl hover:before:opacity-100`}
                         >
                             <div className="flex justify-between items-start mb-4">
-                                <div className="font-jetbrains text-xs text-accent tracking-wide">
-                                    {project.year}
-                                </div>
-                                <span className="text-text-muted transition-all duration-300 text-xl group-hover:text-accent group-hover:translate-x-1 group-hover:-translate-y-1">
+                                {project.featured && (
+                                    <span className="font-jetbrains text-[10px] tracking-widest uppercase py-1 px-2.5
+                                        bg-accent/10 text-accent rounded-full border border-accent/20">
+                                        Featured
+                                    </span>
+                                )}
+                                <span className={`text-text-muted transition-all duration-300 text-xl group-hover:text-accent group-hover:translate-x-1 group-hover:-translate-y-1 ${project.featured ? '' : 'ml-auto'}`}>
                                     {project.link ? <FiExternalLink /> : <FiEye />}
                                 </span>
                             </div>

@@ -100,15 +100,14 @@ export const projects = [
     {
         title: 'Arcvis Digital Design Services',
         description: 'A full-stack web app for presenting company services with a custom appointment booking system. Redesigned a year later with a premium navy-and-gold identity, removing all UI libraries (MUI, Swiper) in favor of fully custom components.',
-        year: 'Jan 2025 — Apr 2026',
-        tags: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB'],
+        tags: ['React', 'Node.js', 'Express.js', 'MongoDB'],
+        featured: true,
         link: 'https://v2-arcvisdesigns.onrender.com/',
         linkV1: 'https://arcvisdesigns.onrender.com/',
     },
     {
         title: 'Memory Game',
         description: 'A responsive card matching game where players flip tiles to find matching pairs and complete the board.',
-        year: 'Oct 2025',
         tags: ['React', 'SASS'],
         link: 'https://memory-game-seven-ruby.vercel.app/'
     },
@@ -122,8 +121,8 @@ export const projects = [
     {
         title: 'Maths Scavenger Hunt App',
         description: 'A mobile scavenger hunt app where players solve math problems to unlock clues and progress through locations.',
-        year: 'Aug 2025 - Sep 2025',
         tags: ['React Native', 'Firebase'],
+        featured: true,
         images: [
             '/projects/scavenger-hunt/home.webp',
             '/projects/scavenger-hunt/scan.webp',
@@ -135,36 +134,32 @@ export const projects = [
     {
         title: 'Realtor Website',
         description: 'A responsive real estate website redesign created as a technical assessment for a job application.',
-        year: 'Aug 2025',
         tags: ['React', 'Tailwind CSS'],
         link: 'https://marci-metzger-theta.vercel.app/'
     },
     {
         title: 'Tic-Tac-Toe Game',
         description: 'A simple, modern Tic-Tac-Toe game that lets players choose X or O, track their score, and reset the board.',
-        year: 'Jul 2025',
         tags: ['Next.js', 'Tailwind CSS'],
         link: 'https://tic-tac-toe-game-ecru-kappa.vercel.app/'
     },
     {
         title: 'Country Quiz Master',
         description: 'A responsive quiz app built with React and Tailwind CSS. It uses the Rest Countries API to generate flag, capital, and continent questions with score tracking and answer feedback.',
-        year: 'Jun 2025',
         tags: ['React', 'Tailwind CSS'],
         link: 'https://country-quiz-master-phi.vercel.app/'
     },
     {
         title: 'Space Tourism',
         description: 'A responsive multi-page website developed based on a Frontend Mentor design challenge.',
-        year: 'Apr 2025',
         tags: ['React', 'Tailwind CSS'],
         link: 'https://spacetourism-murex.vercel.app/'
     },
     {
         title: 'IMPRINTA',
         description: 'A full-stack web app for managing printing services. It features secure auth and a user-friendly interface, rated 94% in usability tests.',
-        year: 'May 2024 - Dec 2024',
         tags: ['Flutter', 'Node.js', 'Firebase'],
+        featured: true,
         link: 'https://youtu.be/SCuGbweG-p4?si=vQuE7eh7H7SOVtU7'
     },
 ]
