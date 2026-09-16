@@ -68,8 +68,17 @@ export const skillSet = [
 export const experiences = [
     {
         title: 'Junior Frontend Developer',
+        company: 'Sprintify IT Services Corp',
+        year: 'Aug 2026 - Present',
+        description: [
+            'Build and maintain web interfaces that adapt across devices using modern frontend technologies.',
+            'Work with the development team to deliver responsive features and improve application performance.',
+        ]
+    },
+    {
+        title: 'Junior Frontend Developer',
         company: 'Parallel Quantum Corp',
-        year: 'Oct 2025 - Present',
+        year: 'Oct 2025 - Aug 2026',
         description: [
             'Developed and maintained cross-platform web applications using modern frontend technologies.',
             'Collaborated closely with the team to implement responsive UI and ensure high performance.',
@@ -99,36 +108,85 @@ export const experiences = [
 export const projects = [
     {
         title: 'Arcvis Digital Design Services',
-        description: 'A full-stack web app for presenting company services with a custom appointment booking system. Redesigned a year later with a premium navy-and-gold identity, removing all UI libraries (MUI, Swiper) in favor of fully custom components.',
+        description: 'A full-stack web app for presenting company services with a custom appointment booking system.',
         tags: ['React', 'Node.js', 'Express.js', 'MongoDB'],
         featured: true,
         link: 'https://v2-arcvisdesigns.onrender.com/',
-        linkV1: 'https://arcvisdesigns.onrender.com/',
+        images: [
+            {
+                src: '/projects/arcvis/home.webp',
+                alt: 'Arcvis client homepage',
+                device: 'desktop',
+                caption: 'Client homepage'
+            },
+            {
+                src: '/projects/arcvis/book.webp',
+                alt: 'Arcvis client booking page',
+                device: 'desktop',
+                caption: 'Appointment booking'
+            },
+            {
+                src: '',
+                alt: 'Arcvis admin dashboard overview',
+                device: 'desktop',
+                caption: 'Admin dashboard'
+            },
+            {
+                src: '',
+                alt: 'Arcvis admin project management screen',
+                device: 'desktop',
+                caption: 'Project management'
+            },
+            {
+                src: '',
+                alt: 'Arcvis client homepage on mobile',
+                device: 'phone',
+                caption: 'Client mobile view'
+            }
+        ]
     },
     {
-        title: 'Memory Game',
-        description: 'A responsive card matching game where players flip tiles to find matching pairs and complete the board.',
-        tags: ['React', 'SASS'],
-        link: 'https://memory-game-seven-ruby.vercel.app/'
+        title: 'PC Bulacan Rewards',
+        description: 'A rewards management website where customers can check points and redeem items, with an admin dashboard for managing users and rewards.',
+        tags: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB'],
+        link: 'https://rewards-pcb.vercel.app/'
     },
-    // {
-    //     title: 'PC Bulacan Rewards',
-    //     description: 'A rewards management website where customers can check points and redeem items, with an admin dashboard for managing users and rewards.',
-    //     year: 'Aug 2025 - Sep 2025',
-    //     tags: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB'],
-    //     link: 'https://rewards-pcb.vercel.app/'
-    // },
     {
         title: 'Maths Scavenger Hunt App',
         description: 'A mobile scavenger hunt app where players solve math problems to unlock clues and progress through locations.',
         tags: ['React Native', 'Firebase'],
         featured: true,
         images: [
-            '/projects/scavenger-hunt/home.webp',
-            '/projects/scavenger-hunt/scan.webp',
-            '/projects/scavenger-hunt/map.webp',
-            '/projects/scavenger-hunt/age.webp',
-            '/projects/scavenger-hunt/question.webp'
+            {
+                src: '/projects/scavenger-hunt/home.webp',
+                alt: 'Maths Scavenger Hunt home screen',
+                device: 'phone',
+                caption: 'Home'
+            },
+            {
+                src: '/projects/scavenger-hunt/scan.webp',
+                alt: 'Maths Scavenger Hunt scanning screen',
+                device: 'phone',
+                caption: 'Scanner'
+            },
+            {
+                src: '/projects/scavenger-hunt/map.webp',
+                alt: 'Maths Scavenger Hunt map screen',
+                device: 'phone',
+                caption: 'Map'
+            },
+            {
+                src: '/projects/scavenger-hunt/age.webp',
+                alt: 'Maths Scavenger Hunt age selection screen',
+                device: 'phone',
+                caption: 'Age selection'
+            },
+            {
+                src: '/projects/scavenger-hunt/question.webp',
+                alt: 'Maths Scavenger Hunt math question screen',
+                device: 'phone',
+                caption: 'Math question'
+            }
         ]
     },
     {
@@ -136,18 +194,6 @@ export const projects = [
         description: 'A responsive real estate website redesign created as a technical assessment for a job application.',
         tags: ['React', 'Tailwind CSS'],
         link: 'https://marci-metzger-theta.vercel.app/'
-    },
-    {
-        title: 'Tic-Tac-Toe Game',
-        description: 'A simple, modern Tic-Tac-Toe game that lets players choose X or O, track their score, and reset the board.',
-        tags: ['Next.js', 'Tailwind CSS'],
-        link: 'https://tic-tac-toe-game-ecru-kappa.vercel.app/'
-    },
-    {
-        title: 'Country Quiz Master',
-        description: 'A responsive quiz app built with React and Tailwind CSS. It uses the Rest Countries API to generate flag, capital, and continent questions with score tracking and answer feedback.',
-        tags: ['React', 'Tailwind CSS'],
-        link: 'https://country-quiz-master-phi.vercel.app/'
     },
     {
         title: 'Space Tourism',
