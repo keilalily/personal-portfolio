@@ -69,16 +69,7 @@ export const experiences = [
     {
         title: 'Junior Frontend Developer',
         company: 'Sprintify IT Services Corp',
-        year: 'Aug 2026 - Present',
-        description: [
-            'Build and maintain web interfaces that adapt across devices using modern frontend technologies.',
-            'Work with the development team to deliver responsive features and improve application performance.',
-        ]
-    },
-    {
-        title: 'Junior Frontend Developer',
-        company: 'Parallel Quantum Corp',
-        year: 'Oct 2025 - Aug 2026',
+        year: 'Oct 2025 - Present',
         description: [
             'Developed and maintained cross-platform web applications using modern frontend technologies.',
             'Collaborated closely with the team to implement responsive UI and ensure high performance.',
@@ -141,12 +132,6 @@ export const projects = [
                 alt: 'Arcvis admin project management screen',
                 device: 'desktop',
                 caption: 'Project management'
-            },
-            {
-                src: '',
-                alt: 'Arcvis client homepage on mobile',
-                device: 'phone',
-                caption: 'Client mobile view'
             }
         ]
     },
