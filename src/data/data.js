@@ -107,10 +107,15 @@ export const experiences = [
 
 export const projects = [
     {
+        title: 'Lumora Play',
+        description: 'A collection of casual browser games connected by a shared points system. Players can discover games from one dashboard and enjoy quick, replayable rounds.',
+        tags: ['React', 'SASS', 'TypeScript'],
+        link: 'https://lumora-play.onrender.com/'
+    },
+    {
         title: 'Arcvis Digital Design Services',
         description: 'A full-stack web app for presenting company services with a custom appointment booking system.',
         tags: ['React', 'Node.js', 'Express.js', 'MongoDB'],
-        featured: true,
         link: 'https://v2-arcvisdesigns.onrender.com/',
         images: [
             {
@@ -155,7 +160,6 @@ export const projects = [
         title: 'Maths Scavenger Hunt App',
         description: 'A mobile scavenger hunt app where players solve math problems to unlock clues and progress through locations.',
         tags: ['React Native', 'Firebase'],
-        featured: true,
         images: [
             {
                 src: '/projects/scavenger-hunt/home.webp',
@@ -205,7 +209,6 @@ export const projects = [
         title: 'IMPRINTA',
         description: 'A full-stack web app for managing printing services. It features secure auth and a user-friendly interface, rated 94% in usability tests.',
         tags: ['Flutter', 'Node.js', 'Firebase'],
-        featured: true,
         link: 'https://youtu.be/SCuGbweG-p4?si=vQuE7eh7H7SOVtU7'
     },
 ]

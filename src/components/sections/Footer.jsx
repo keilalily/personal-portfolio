@@ -27,7 +27,8 @@ const Footer = () => {
                     ))}
                 </div>
                 <div className="text-sm text-text-muted opacity-50">
-                    © 2025 Kyla Marie Angeles.
+                    <p>© {new Date().getFullYear()} Kyla Marie Angeles.</p>
+                    <p className="mt-1">Built with React, Vite, and Tailwind CSS.</p>
                 </div>
             </div>
         </footer>
